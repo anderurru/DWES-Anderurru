@@ -1,0 +1,21 @@
+# Maven
+**/target/
+
+# Gradle
+**/build/
+.gradle/
+
+# IDE
+**/.idea/
+**/.vscode/
+**/.settings/
+**/.project
+**/.classpath
+**/*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Registros
+*.log
