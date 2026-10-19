@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de incidencia</title>
+</head>
+<body>
+    <h1>Detalle de incidencia</h1>
+	<p><strong>ID:</strong> <span th:text="${IncidenciaDetallada.id}"></span></p>
+	<p><strong>Título:</strong> <span th:text="${IncidenciaDetallada.titulo}"></span></p>
+	<p><strong>Descripción:</strong> <span th:text="${IncidenciaDetallada.descripcion}"></span></p>
+	<p><strong>Aula:</strong> <span th:text="${IncidenciaDetallada.aula}"></span></p>
+	<p><strong>Gravedad:</strong> <span th:text="${IncidenciaDetallada.gravedad}"></span></p>
+	<p><strong>Estado:</strong>
+	    <span th:text="${IncidenciaDetallada.resuelta ? 'Resuelta' : 'Pendiente'}"></span>
+	</p>
+	<a th:href="@{/incidencias}">Volver al listado</a>
+</body>
+</html>
