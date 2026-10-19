@@ -17,7 +17,7 @@ public class IncidenciaService {
 		inventario.add(new Incidencia("1", "Problema con la pizarra", "La pizarra no funciona correctamente",
 				"Aula 101", "ALTA", false));
 		inventario.add(new Incidencia("2", "Problema con el proyector", "El proyector no enciende", "Aula 102",
-				"MODERADA", false));
+				"MODERADA", true));
 		inventario.add(new Incidencia("3", "Problema con el aire acondicionado", "El aire acondicionado no enfría",
 				"Aula 103", "CRÍTICA", false));
 		inventario.add(new Incidencia("4", "Problema con la luz", "La luz parpadea constantemente", "Aula 104", "ALTA",
