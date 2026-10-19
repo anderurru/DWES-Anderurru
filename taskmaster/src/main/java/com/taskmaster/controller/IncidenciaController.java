@@ -23,7 +23,7 @@ public class IncidenciaController {
 
 	@GetMapping("/incidencias")
 	public String getIncidencias(@RequestParam(name = "gravedad", required = false) String gravedad, Model model) {
-		if (gravedad == null) {
+		if (gravedad == null || gravedad.isBlank()) {
 			model.addAttribute("listadoIncidencias", incidenciaService.obtenerTodas());
 		} else {
 			model.addAttribute("listadoIncidencias", incidenciaService.filtrarPorGravedad(gravedad));
